@@ -25,10 +25,10 @@ resource "mongodbatlas_advanced_cluster" "this" {
 
   replication_specs = [{
     region_configs = [{
-      provider_name = "TENANT"
+      provider_name         = "TENANT"
       backing_provider_name = var.atlas_cloud_provider
-      region_name = var.atlas_region
-      priority    = 7
+      region_name           = var.atlas_region
+      priority              = 7
 
       electable_specs = {
         instance_size = var.atlas_instance_size

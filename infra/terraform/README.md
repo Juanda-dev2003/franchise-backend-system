@@ -78,9 +78,8 @@ aws ecr get-login-password --region us-east-1 \
 Construye y publica la imagen:
 
 ```bash
-docker build -t franchise-backend-system .
-docker tag franchise-backend-system:latest "$(terraform output -raw ecr_repository_url):latest"
-docker push "$(terraform output -raw ecr_repository_url):latest"
+chmod +x push-image.sh
+./push-image.sh
 ```
 
 App Runner tiene `auto_deployments_enabled = true`, por lo que tomara la nueva imagen.
