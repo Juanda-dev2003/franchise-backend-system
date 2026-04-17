@@ -1,0 +1,17 @@
+project_name       = "franchise-backend-system"
+environment        = "dev"
+aws_region         = "us-east-1"
+container_image_tag = "latest"
+deploy_app         = false
+
+atlas_org_id       = "xxxxxxxxxxxxxxxxxxxxxxxx"
+atlas_project_name = "franchise-backend-system"
+atlas_cluster_name = "franchise-cluster"
+atlas_region       = "US_EAST_1"
+atlas_instance_size = "M0"
+
+database_name     = "franchise_backend"
+database_username = "franchise_app_user"
+
+# Para pruebas. En produccion restringe a rangos confiables.
+atlas_access_list_cidr_blocks = ["0.0.0.0/0"]
