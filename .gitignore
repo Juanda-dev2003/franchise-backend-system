@@ -35,3 +35,11 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Terraform ###
+infra/terraform/.terraform/
+infra/terraform/terraform.tfvars
+infra/terraform/*.auto.tfvars
+infra/terraform/terraform.tfstate
+infra/terraform/terraform.tfstate.*
+infra/terraform/crash.log
